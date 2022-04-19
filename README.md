@@ -32,4 +32,4 @@
 
 ## Improvement
 
-### Add SNYK step to check vulnerabilities in images
+### Add SNYK step in the workflow to check vulnerabilities in images
