@@ -14,4 +14,8 @@ client.connect(function () {
   console.log('Redis connected');
 });
 
+client.error(function (err) {
+  console.log('Redis error', err);
+});
+
 module.exports = client;
