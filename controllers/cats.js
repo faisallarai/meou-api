@@ -49,6 +49,11 @@ catsRouter.get('/', async (req, res) => {
     client.get(searchTerm, async (err, result) => {
       if (err) {
         console.error(err);
+        res.json({
+          status: true,
+          message: 'Error',
+          data: { cat: {}, error: err },
+        });
       } else {
         console.log(result); // Prints "value"
         if (result) {
