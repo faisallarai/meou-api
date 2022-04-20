@@ -10,11 +10,11 @@ const client = new Redis({
 
 console.log('Redis', client.status);
 
-client.connect(function () {
+client.on('connect', function () {
   console.log('Redis connected');
 });
 
-client.error(function (err) {
+client.on('error', function (err) {
   console.log('Redis error', err);
 });
 
