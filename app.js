@@ -10,8 +10,6 @@ const catsRouter = require('./controllers/cats');
 const middleware = require('./utils/middleware');
 const logger = require('./utils/logger');
 
-logger.info('connecting to redis');
-
 logger.info('connecting to', config.MONGODB_URI);
 
 mongoose

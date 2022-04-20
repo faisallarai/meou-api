@@ -8,6 +8,6 @@ const client = new Redis({
   db: 0, // Defaults to 0
 });
 
-client.set('welcome', 'Welcome to redis');
+console.log('Redis', client.status);
 
 module.exports = client;
