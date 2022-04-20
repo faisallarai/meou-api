@@ -10,4 +10,8 @@ const client = new Redis({
 
 console.log('Redis', client.status);
 
+client.connect(function () {
+  console.log('Redis connected');
+});
+
 module.exports = client;
