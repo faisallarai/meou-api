@@ -9,5 +9,5 @@
 **/.editorconfig
 **/.aws
 **/dist
-.gitignore
-Dockerfile
+**/.gitignore
+**/Dockerfile
